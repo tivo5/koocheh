@@ -1,72 +1,177 @@
 <!DOCTYPE html>
-
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>تحلیل و بررسی «جنگ دوازده روزه</title>
+    <!-- Persian font (recommended) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
+      :root {
+        /* Fluid typography */
+        --fs-base: clamp(15px, 1.1vw, 18px);
+        --fs-h1: clamp(20px, 4vw, 30px);
+        --fs-h2: clamp(18px, 3.2vw, 24px);
+        --fs-h3: clamp(16px, 2.8vw, 20px);
+      }
+
       body {
         font-family: "Vazirmatn", "Tahoma", sans-serif;
         background-color: #fdfdfd;
         color: #333;
-        line-height: 1.6;
-        margin: 40px;
+        line-height: 1.75;
+        font-size: var(--fs-base);
+
+        margin: 0;
+        padding: 24px 16px;
         max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-inline: auto;
       }
+
       h1 {
+        font-size: var(--fs-h1);
         color: #2c3e50;
         border-bottom: 2px solid #d35400;
         padding-bottom: 10px;
+        margin-bottom: 20px;
       }
+
       h2 {
+        font-size: var(--fs-h2);
         color: #d35400;
-        margin-top: 30px;
+        margin-top: 36px;
         border-right: 5px solid #2c3e50;
-        padding-right: 10px;
+        padding-right: 12px;
       }
+
       h3 {
+        font-size: var(--fs-h3);
         color: #e67e22;
-        margin-top: 20px;
+        margin-top: 24px;
       }
+
       p {
-        margin-bottom: 15px;
+        margin-bottom: 16px;
         text-align: justify;
       }
+
       ul {
         list-style-type: disc;
-        margin-right: 20px;
+        padding-right: 20px;
+        margin-bottom: 24px;
       }
+
       li {
-        margin-bottom: 10px;
+        margin-bottom: 14px;
       }
+
       .citation {
         display: inline-block;
         background-color: #f1f1f1;
         border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 2px 6px;
+        border-radius: 6px;
+        padding: 4px 8px;
         font-size: 0.85em;
-        margin-right: 5px;
+        margin: 6px 4px 0 0;
+        white-space: nowrap;
       }
+
       .citation a {
         text-decoration: none;
         color: #2980b9;
-        font-weight: bold;
+        font-weight: 600;
       }
+
       .citation a:hover {
         text-decoration: underline;
       }
+
       .quote {
         background-color: #fff3cd;
-        padding: 10px;
+        padding: 12px;
         border-right: 4px solid #ffc107;
-        margin: 10px 0;
+        margin: 16px 0;
         font-style: italic;
+        border-radius: 6px;
       }
+
+      /* Mobile refinements */
+      @media (max-width: 600px) {
+        body {
+          padding: 18px 14px;
+        }
+
+        ul {
+          padding-right: 16px;
+        }
+
+        .citation {
+          font-size: 0.8em;
+          margin-top: 8px;
+        }
+      }
+
+          /* Container for the floating image and its caption */
+    .article-float-image {
+      width: 180px;
+      /* Define a fixed width for the thumbnail area */
+      margin-bottom: 5px;
+      /* Space below the image container */
+    }
+
+    /* 1. Positioning and Horizontal Spacing (Left Float / RTL Context) */
+    .article-float-image.left-float {
+      float: left;
+      /* Space between the container and the left edge of the article */
+      margin-left: 20px;
+      /* CRITICAL: Space between the image and the main wrapping text on the right */
+      margin-right: 30px;
+      /* Space between the floating block and text/elements below it */
+      margin-bottom: 15px;
+    }
+
+    /* 2. Image Styling */
+    .article-float-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      /* Essential: Treats image as a block to remove the default inline gap */
+      display: block;
+      /* Ensures no extra space pushes the caption down */
+      margin-bottom: 0;
+    }
+
+    /* 3. Caption Styling (The Vertical Space Fix) */
+    .float-caption {
+      font-size: 0.85em;
+      color: #666;
+      text-align: center;
+      /* CRITICAL FIX: Creates the vertical space between the image bottom and the caption top */
+      margin-top: 10px;
+      margin-bottom: 0;
+      /* Clear default paragraph margins */
+    }
+
+    /* CRITICAL: Use clear: both on the paragraph where the wrapping should stop */
+    /* If you want the wrapping to stop after the next paragraph, use a class like 'clear-float' */
+    .clear-float {
+      clear: both;
+    }
+      
     </style>
+
+    <!-- Twitter / X preview -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="تحلیل و بررسی «جنگ دوازده روزه" />
+    <meta name="twitter:description" content="این جنگ منجر به خسارات گسترده به زیرساخت‌های هسته‌ای، نظامی و  فرماندهی جمهوری اسلامی شده است" />
+    <meta name="twitter:image" content="" />
   </head>
+
   <body>
     <div class="container">
       <h1>تحلیل و بررسی «جنگ دوازده روزه» بر اساس اسناد موجود</h1>
